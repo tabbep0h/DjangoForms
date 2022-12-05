@@ -1,0 +1,11 @@
+.userInfo{
+    display: flex;
+    flex-direction: column;
+}
+.userAdress{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 20px;
+}

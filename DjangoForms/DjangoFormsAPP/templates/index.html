@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form-bg">
+        <form method = "post" action="appointment/" class = "form">
+            {% csrf_token %}    
+            <div class="form__body">
+                <div class="form__wrap">
+                    <p class="form__title">Make an appointment</p>
+                    <div class="form__inputs">
+                        <input type="text" class="field__Name input" name = "name" placeholder="Name">
+                        <input type="tel" class="field__Phone input " name = "phone" placeholder="Phone Number">
+                        <input type="email" class = "field__Email input" name = "email" placeholder="Email">
+                        <input type="text" class = "field__Service input" name = "service" placeholder="Select Service">
+                        <textarea type="text" class = "field__About input" name = "about" placeholder="Tell us about the car needing service(s)"></textarea>
+                        <button type="submit" class = "form__btn" ><p class = "btn__p">Make an appointment</p></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="text__body">
+            <div class="text__wrap">
+                <p class="title__up">Maxime placeat facere<Br> possimus omnis </p>
+                <p class="title">17k</p>
+                <p class="title__down">customers served (and counting)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
